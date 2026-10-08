@@ -54,7 +54,7 @@ if (consultationForm) {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/api/consultations", {
+      const response = await fetch("https://cpa-website-n12z.onrender.com/api/consultations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
