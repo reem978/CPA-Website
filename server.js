@@ -39,6 +39,7 @@ app.post("/api/consultations", async (req, res) => {
   }
 });
 mongoose.connect(process.env.MONGODB_URI, {
+    dbName: "northline",
   serverSelectionTimeoutMS: 10000
 })
   .then(() => {
